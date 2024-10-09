@@ -1,0 +1,30 @@
+/* Reseteo básico del margen y relleno del cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* La altura es el 100% de la ventana visible */
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+/* Estilo para el contenedor de la animación de carga */
+.loader {
+    width: 100px; /* Ancho del loader */
+    height: 100px; /* Alto del loader */
+    border: 16px solid #f3f3f3; /* Borde exterior */
+    border-top: 16px solid #3498db; /* Borde superior (crea la animación de rotación) */
+    border-radius: 50%; /* Hace que el div sea redondo */
+    animation: spin 2s linear infinite; /* Aplica la animación de rotación */
+}
+
+/* Definimos la animación de giro (spin) */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Estado inicial: sin rotación */
+    }
+    100% {
+        transform: rotate(360deg); /* Gira 360 grados */
+    }
+}
